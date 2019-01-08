@@ -172,6 +172,19 @@ body {
     margin: 5rem;
   }
 }
+.button-add {
+  justify-content: center;
+  position: relative;
+  bottom: 25px;
+}
+
+@media (min-width: 992px) {
+  .button-add {
+    justify-content: flex-end;
+    margin-right: 6rem;
+    bottom: 50px;
+  }
+}
 .login, .add {
   background: #2c82c9;
   width: 100%;
