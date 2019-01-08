@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+body {
+  margin: 0;
+  padding: 0;
+  /* make it look decent enough */
+  background: #ececec;
+  color: #22313f;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+#menuToggle {
+  display: block;
+  position: relative;
+  top: 50px;
+  margin-left: 50px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input {
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  cursor: pointer;
+  opacity: 0;
+  /* hide this */
+  z-index: 2;
+  /* and place it over the hamburger */
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #cdcdcd;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #22313f;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu {
+  position: absolute;
+  width: 75%;
+  height: 100vh;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background: #2c82c9;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+@media (min-width: 576px) {
+  #menu {
+    width: 50%;
+  }
+}
+@media (min-width: 769px) {
+  #menu {
+    width: 25%;
+  }
+}
+/* #menu li {
+    padding: 10px 0;
+    font-size: 22px;
+} */
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ div {
+  transform: none;
+}
+
+.admin-menu {
+  margin: auto;
+  width: 100%;
+  height: 75vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.admin-menu .icon-login {
+  font-size: 125px;
+  color: #ececec;
+}
+.admin-menu .connect_hr {
+  border-top: 1px solid #22313f;
+}
+.admin-menu .text-admin {
+  color: #ececec;
+  font-size: 25px;
+}
+.admin-menu .button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 25px;
+  margin-bottom: 25px;
+}
+.admin-menu .button .users, .admin-menu .button .logout {
+  margin-top: 15px;
+}
+
+.row {
+  margin: 3rem;
+}
+.row .card {
+  color: #22313f;
+}
+.row .card:hover {
+  color: #22313f;
+  text-decoration: none;
+}
+.row .card .card-body {
+  text-align: center;
+}
+
+@media (min-width: 769px) {
+  .row {
+    margin: 5rem;
+  }
+}
+.login, .add {
+  background: #2c82c9;
+  width: 100%;
+  height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.login .connect, .login .register, .add .connect, .add .register {
+  margin: auto;
+  width: 75%;
+  text-align: center;
+}
+@media (min-width: 576px) {
+  .login .connect, .login .register, .add .connect, .add .register {
+    width: 50%;
+  }
+}
+.login .icon-login, .add .icon-login {
+  font-size: 200px;
+  color: #ececec;
+}
+.login .register-title, .add .register-title {
+  font-size: 75px;
+  color: #ececec;
+}
+.login .connect_hr, .add .connect_hr {
+  border-top: 1px solid #22313f;
+}
+.login .text_connect, .add .text_connect {
+  color: #ececec;
+}
+.login .click_here, .add .click_here {
+  color: #ececec;
+}
+.login .click_here:hover, .add .click_here:hover {
+  color: #ececec;
+}
+
+/*# sourceMappingURL=styles.css.map */
