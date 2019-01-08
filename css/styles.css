@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Lato");
 body {
   margin: 0;
   padding: 0;
@@ -112,10 +111,6 @@ body {
     width: 25%;
   }
 }
-/* #menu li {
-    padding: 10px 0;
-    font-size: 22px;
-} */
 /*
  * And let's slide it in from the left
  */
@@ -149,7 +144,8 @@ body {
   margin-right: 25px;
   margin-bottom: 25px;
 }
-.admin-menu .button .users, .admin-menu .button .logout {
+.admin-menu .button .users,
+.admin-menu .button .logout {
   margin-top: 15px;
 }
 
