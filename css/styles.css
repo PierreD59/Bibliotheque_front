@@ -1,3 +1,31 @@
+.detail {
+  width: 100%;
+  margin: auto;
+  color: #22313f;
+  display: flex;
+  flex-direction: column;
+}
+.detail .book_name {
+  font-size: 50px;
+  text-align: center;
+}
+.detail .book_list {
+  list-style: none;
+}
+.detail .book_content {
+  font-size: 15px;
+}
+.detail .book_img {
+  width: 300px;
+  height: 200px;
+  margin: auto;
+}
+
+@media (min-width: 769px) {
+  .detail {
+    width: 50%;
+  }
+}
 body {
   margin: 0;
   padding: 0;
@@ -147,6 +175,13 @@ body {
 .admin-menu .button .users,
 .admin-menu .button .logout {
   margin-top: 15px;
+}
+.admin-menu .return-index, .admin-menu .link {
+  text-decoration: none;
+  color: #ececec;
+}
+.admin-menu:hover {
+  text-decoration: none;
 }
 
 .row {

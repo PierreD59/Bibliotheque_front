@@ -4,7 +4,7 @@
 .row {
     margin: 3rem;
 
-    .card{
+    .card {
         color: $text_color;
         &:hover {
             color: $text_color;
@@ -15,17 +15,19 @@
         }
     }
 }
+
 @media (min-width: 769px) {
     .row {
         margin: 5rem;
     }
-
 }
+
 .button-add {
     justify-content: center;
     position: relative;
     bottom: 25px;
 }
+
 @media (min-width: 992px) {
     .button-add {
     justify-content: flex-end;

@@ -173,4 +173,11 @@ body {
             margin-top: 15px;
         }
     }
+    .return-index, .link {
+        text-decoration: none;
+        color: $color_white;
+    }
+    &:hover {
+        text-decoration: none;
+    }
 }
