@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Log in | Bibliothèque</title>
+    <title>Detail User | Bibliothèque</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -30,10 +30,8 @@
         <nav role="navigation">
             <div id="menuToggle">
                 <input type="checkbox" />
-                <span></span>
-                <span></span>
-                <span></span>
-
+                <i class="fas fa-bars burger"></i>
+                
                 <div id="menu">
                     <div class="admin-menu">
                         <a class="return-index" href="home.html"><i class="fas fa-user-circle icon-login"></i>
@@ -41,8 +39,8 @@
                             <p class="text-admin">Admin</p>
                         </a>
                         <ul class="button">
-                            <a class="link" href="users.html"><li class="btn btn-secondary text-light users ml-3" type="button">Users</li></a><br>
-                            <a class="link" href="disconnect.html"><li class="btn btn-secondary text-light logout" type="button">Log out</li></a>
+                            <a class="link" href="users.html"><li class="btn button-color text-light users ml-3" type="button">Users</li></a><br>
+                            <a class="link" href="disconnect.html"><li class="btn button-color text-light logout" type="button">Log out</li></a>
                         </ul>
                     </div>
                 </div>
@@ -52,20 +50,18 @@
             <div class="row">
                 <div class="detail">
                     <!-- Book's name -->
-                    <p class="book_name">Book's name</p>
+                    <p class="user_name">User's name</p>
                     <hr></hr>
-                    <ul class="book_list">
-                        <li><b>Author</b> = </li>
-                        <li><b>Release_date</b> = </li>
-                        <li><b>Category</b> = </li>
-                        <li><b>Loaning</b> = </li>
+                    <ul class="user_list">
+                        <li><b>Firstname</b> = </li>
+                        <li><b>Lastname</b> = </li>
+                        <li><b>Username</b> = </li>
+                        <li><b>Book's loaning</b> = </li>
                     </ul>
-                    <ul class="book_list">
-                        <li><a href="#"class="btn btn-warning">Edit User</a> <a href="#"class="btn btn-danger">Delete User</a></li>
+                    <ul class="user_list">
+                        <li><a href="#"class="btn button-color ml-1 mt-3">Edit User</a> <a href="#"class="btn button-color ml-1 mt-3">Delete User</a></li>
                     </ul>
                     <hr></hr>
-                    <p class="book_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam veritatis, placeat minus facere inventore nisi recusandae ad laudantium architecto odio nam quisquam, labore, ducimus illo animi reprehenderit consectetur quibusdam maxime?</p>
-                    <img class="book_img" src="img/anonyme.jpg" alt="">
                 </div>
             </div>
         </main>

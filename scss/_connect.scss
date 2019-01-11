@@ -22,19 +22,17 @@
 
     .icon-login {
         font-size: 200px;
-        color: $color_white;
     }
 
     .register-title
     {
         font-size: 75px;
-        color: $color_white;
     }
     .connect_hr {
         border-top: 1px solid $text_color;
     }
 
-    .text_connect {
+    .text_connect, .icon-login, .register-title {
         color: $color_white;
     }
 
