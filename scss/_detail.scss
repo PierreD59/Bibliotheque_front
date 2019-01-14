@@ -1,8 +1,15 @@
 @import '_variables.scss';
 @import '_mixins.scss';
-
-.detail {
+.bread {
+    display: flex;
+    justify-content: center;
+}
+.page_detail {
     width: 100%;
+    margin-top: 10%;
+}
+.detail {
+    width: 90%;
     margin: auto;
     color: $text_color;
     display: flex;
@@ -12,24 +19,50 @@
         font-size: 50px;
         text-align: center;
     }
-    .book_list, .user_list {
+
+    .book_list, .user_list, .button_list {
         list-style: none;
     }
     .book_content {
         font-size: 15px;
     }
     .book_img, .user_img {
-        width: 300px;
-        height: 200px;
-        margin: auto;
+        width: 100%;
     }
     .button-color {
-        background-color: $text_color;
+        background-color: $bg-color;
         color: $color_white;
+        &:hover {
+            background: $text_color;
+        }
+    }
+
+}
+@media (min-width: 576px) {
+    .page_detail {
+        margin-top: 5%;
+    }
+    .detail {
+        width: 75%;
+        .book_img, .user_img {
+            width: 50% !important;
+            margin:auto;
+        }
     }
 }
-@media (min-width: 769px) {
+
+@media (min-width: 992px) {
+    .page_detail {
+        margin-top: 0;
+    }
+
     .detail {
         width: 50%;
+
+        .book_img,
+        .user_img {
+            width: 50% !important;
+            margin: auto;
+        }
     }
 }

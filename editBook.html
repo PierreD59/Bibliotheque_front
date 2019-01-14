@@ -53,8 +53,8 @@
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb bread">
             <li class="breadcrumb-item"><a href="home.html">Books</a></li>
-            <li class="breadcrumb-item"><a href="users.html">Users</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Add</li>
+            <li class="breadcrumb-item"><a href="detailBook.html">Detail Books</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Edit</li>
         </ol>
     </nav>
 
@@ -62,13 +62,57 @@
         <div class="row">
             <div class="m-auto addBook">
 
-                <p>Add Book</p>
+                <p>Edit Book</p>
                 <hr>
                 </hr>
                 <form>
-                    <input class="mt-3" type="text" name="firstname" id="firstname" placeholder="Firstname" /><br>
-                    <input class="mt-3" type="text" name="lastname" id="lastname" placeholder="Lastname" /><br>
+                    <input class="mt-3" type="text" name="book" id="book" placeholder="Book's name" /><br>
+                    <input class="mt-3" type="text" name="author" id="author" placeholder="Author's name" /><br>
+                    <input class="mt-3" type="date" name="release_date" id="release_date" /><br>
 
+                    <div class="mt-3 form-check">
+                        <input class="form-check-input" type="radio" name="Category" id="SF" value="SF" checked
+                            required>
+                        <label class="form-check-label" for="sf">
+                            SF
+                        </label>
+                    </div>
+                    <div class="mt-3 form-check">
+                        <input class="form-check-input" type="radio" name="Category" id="fantastic" value="Fantastic">
+                        <label class="form-check-label" for="fantastic">
+                            Fantastic
+                        </label>
+                    </div>
+                    <div class="mt-3 form-check">
+                        <input class="form-check-input" type="radio" name="Category" id="horror" value="Horror">
+                        <label class="form-check-label" for="horror">
+                            Horror
+                        </label>
+                    </div>
+                    <div class="mt-3 form-check">
+                        <input class="form-check-input" type="radio" name="Category" id="Drama" value="Drama">
+                        <label class="form-check-label" for="Drama">
+                            Drama
+                        </label>
+                    </div><br>
+
+                    <div class="mt-3 form-check">
+                        <input class="form-check-input" type="radio" name="Disponibility" id="loaning" value="loaning">
+                        <label class="form-check-label" for="loaning">
+                            Loaning
+                        </label>
+                    </div><br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="Disponibility" id="return" value="return">
+                        <label class="form-check-label" for="return">
+                            Return
+                        </label>
+                    </div><br>
+
+                    <input type="file" name="fileupload" value="fileupload" id="fileupload">
+                    <label for="fileupload"> Select a file to upload</label><br>
+
+                    <textarea class="mt-3" type="text" id="content" name="content" rows="10" cols="30"></textarea><br>
                     <input class="mt-3" type="submit">
                 </form>
 

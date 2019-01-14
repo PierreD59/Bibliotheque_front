@@ -34,9 +34,10 @@
 
             <div id="menu">
                 <div class="admin-menu">
-                    <i class="fas fa-user-circle icon-login"></i>
+                    <a class="return-index" href="home.html"><i class="fas fa-user-circle icon-login"></i>
                         <hr class="connect_hr" />
                         <p class="text-admin">Admin</p>
+                    </a>
                     <ul class="button">
                         <a class="link" href="users.html">
                             <li class="btn button-color text-light users ml-3" type="button">Users</li>
@@ -54,20 +55,21 @@
         <ol class="breadcrumb bread">
             <li class="breadcrumb-item"><a href="home.html">Books</a></li>
             <li class="breadcrumb-item"><a href="users.html">Users</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Add</li>
+            <li class="breadcrumb-item"><a href="detailUser.html">Detail User</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Edit</li>
         </ol>
     </nav>
 
     <main>
         <div class="row">
-            <div class="m-auto addBook">
+            <div class="m-auto editBook">
 
-                <p>Add Book</p>
+                <p>Edit Book</p>
                 <hr>
                 </hr>
                 <form>
-                    <input class="mt-3" type="text" name="firstname" id="firstname" placeholder="Firstname" /><br>
-                    <input class="mt-3" type="text" name="lastname" id="lastname" placeholder="Lastname" /><br>
+                    <input class="mt-3" type="text" name="editFirstname" id="editFirstname" placeholder="Firstname" /><br>
+                    <input class="mt-3" type="text" name="editLastname" id="editLastname" placeholder="Lastname" /><br>
 
                     <input class="mt-3" type="submit">
                 </form>
@@ -102,6 +104,6 @@
         ga('send', 'pageview')
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-</body>
+    </body>
 
 </html>
