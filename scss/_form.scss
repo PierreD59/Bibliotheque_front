@@ -1,0 +1,23 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+
+.editForm, .addForm {
+    margin: auto;
+    width: 50%;
+    
+    .user_name, .book_name {
+        font-size: 50px;
+        text-align: center;
+    }
+    .formUser, .formBook {
+        height: 30px;
+        width: 35%;
+    }
+    .button-color {
+        background-color: $bg-color;
+        color: $color_white;
+        &:hover {
+            background: $text_color;
+        }
+    }
+}

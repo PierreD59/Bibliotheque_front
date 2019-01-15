@@ -1,3 +1,23 @@
+.editForm, .addForm {
+  margin: auto;
+  width: 50%;
+}
+.editForm .user_name, .editForm .book_name, .addForm .user_name, .addForm .book_name {
+  font-size: 50px;
+  text-align: center;
+}
+.editForm .formUser, .editForm .formBook, .addForm .formUser, .addForm .formBook {
+  height: 30px;
+  width: 35%;
+}
+.editForm .button-color, .addForm .button-color {
+  background-color: #2c82c9;
+  color: #ececec;
+}
+.editForm .button-color:hover, .addForm .button-color:hover {
+  background: #22313f;
+}
+
 .card .user-icon {
   font-size: 100px;
   text-align: center;
