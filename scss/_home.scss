@@ -1,0 +1,43 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+
+.row {
+    margin: 4rem;
+    
+    .card {
+        color: $text_color;
+        &:hover {
+            color: $text_color;
+            text-decoration: none;
+            box-shadow: 2px 2px 10px $text_color;
+            transition: box-shadow 500ms;
+        }
+        .card-body {
+            text-align: center;
+        }
+    }
+}
+
+@media (min-width: 769px) {
+    .row {
+        margin: 5rem;
+    }
+}
+
+.button-add {
+    justify-content: center;
+    position: relative;
+    bottom: 25px;
+    .button-color {
+        background-color: $text_color;
+        color: $color_white;
+    }
+}
+
+@media (min-width: 992px) {
+    .button-add {
+        justify-content: flex-end;
+        margin-right: 6rem;
+        bottom: 50px;
+    }
+}

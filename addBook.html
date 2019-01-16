@@ -1,0 +1,175 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Detail User | Bibliothèque</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+        
+        <nav role="navigation">
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <i class="fas fa-bars burger"></i>
+                
+                <div id="menu">
+                    <div class="admin-menu">
+                        <i class="fas fa-user-circle icon-login"></i>
+                        <hr class="connect_hr" />
+                        <p class="text-admin">Admin</p>
+                        <ul class="button">
+                            <a class="link" href="users.html">
+                                <li class="btn button-color text-light users ml-3" type="button">Users</li>
+                            </a><br>
+                            <a class="link" href="disconnect.html">
+                                <li class="btn button-color text-light logout" type="button">Log out</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bread">
+                <li class="breadcrumb-item"><a href="home.html">Books</a></li>
+                <li class="breadcrumb-item"><a href="detailBook.html">Detail Books</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Edit</li>
+            </ol>
+        </nav>
+        
+        <main>
+            <div class="row">
+                <div class="m-auto addForm">
+                    
+                    <p class="book_name">Add Book</p>
+                    <hr>
+                </hr>
+                <form class="m-auto">
+                    <Label class="my-3" for="book"><b>Book</b></Label><br>
+                    <input class="formBook" type="text" name="book" id="book" placeholder="Book's name" required /><br>
+                    
+                    <Label class="my-3" for="author"><b>Author</b></Label><br>
+                    <input class="formBook" type="text" name="author" id="author" placeholder="Author's name"
+                    required /><br>
+                    
+                    <label class="my-3" for="release_date"><b>Release_date</b></label><br>
+                    <input class="formBook" type="date" name="release_date" id="release_date" required /><br>
+                    
+                    <div class="category">
+                        
+                        <label class="my-3" for="Category"><b>Category</b></label><br>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Category" id="SF" value="SF" checked
+                            required>
+                            <label class="form-check-label" for="sf">
+                                SF
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Category" id="fantastic" value="Fantastic">
+                            <label class="form-check-label" for="fantastic">
+                                Fantastic
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Category" id="horror" value="Horror">
+                            <label class="form-check-label" for="horror">
+                                Horror
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Category" id="Drama" value="Drama">
+                            <label class="form-check-label" for="Drama">
+                                Drama
+                            </label>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="disponibility">
+                        <Label class="my-3" for="Disponibility"><b>Disponibility</b></Label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Disponibility" id="loaning" value="loaning">
+                            <label class="form-check-label" for="loaning">
+                                Loaning
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Disponibility" id="return" value="return">
+                            <label class="form-check-label" for="return">
+                                Return
+                            </label>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="Image">
+                        <label class="btn button-color my-3" for="fileupload"><b>Image</b></label><br>
+                        <input class="d-none" type="file" name="fileupload" value="" id="fileupload">
+                    </div>
+                    
+                    <div class="content">
+                        <label for="content"><b>Content</b></label><br>
+                        <textarea type="text" id="content" name="content" rows="10" cols="20"></textarea><br>
+                    </div>
+                    
+                    <input class="btn button-color text-light mt-3 has-spinner" type="submit">
+                </form>
+                
+            </div>
+        </div>
+    </main>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
+        </script>
+        
+        <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+        <script src="js/jquery.buttonLoader.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" -->
+            <!-- crossorigin="anonymous"></script> -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+            
+            <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+            <script>
+                window.ga = function () {
+                    ga.q.push(arguments)
+                };
+                ga.q = [];
+                ga.l = +new Date;
+                ga('create', 'UA-XXXXX-Y', 'auto');
+                ga('send', 'pageview')
+            </script>
+            <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+        </body>
+        
+        </html>
