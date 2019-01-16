@@ -3,15 +3,15 @@
 
 .editForm, .addForm {
     margin: auto;
-    width: 50%;
+    width: 100%;
     
     .user_name, .book_name {
-        font-size: 50px;
+        font-size: 48px;
         text-align: center;
     }
     .formUser, .formBook {
         height: 30px;
-        width: 35%;
+        width: 100%;
     }
     .button-color {
         background-color: $bg-color;
@@ -19,5 +19,36 @@
         &:hover {
             background: $text_color;
         }
+    }
+}
+
+@media (min-width: 576px) {
+
+    .editForm,
+    .addForm {
+        width: 50% !important;
+    }
+
+    .formUser,
+    .formBook {
+        width: 50% !important;
+    }
+
+    .user_name,
+    .book_name {
+        font-size: 50px !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .editForm, .addForm {
+        width: 50% !important;
+    }
+    .formUser, .formBook {
+        width: 35% !important;
+    }
+    .user_name,
+    .book_name {
+        font-size: 50px !important;
     }
 }

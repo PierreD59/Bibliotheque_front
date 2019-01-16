@@ -23,6 +23,14 @@
     .book_list, .user_list, .button_list {
         list-style: none;
     }
+    .edit {
+        width: 100%;
+        display: inline-block;
+    }
+    .delete {
+        width: 100%;
+        display: inline-block;
+    }
     .book_content {
         font-size: 15px;
     }
@@ -48,6 +56,11 @@
             width: 50% !important;
             margin:auto;
         }
+
+        .delete {
+            width: 50%;
+            display: inline-block;
+        }
     }
 }
 
@@ -63,6 +76,11 @@
         .user_img {
             width: 50% !important;
             margin: auto;
+        }
+
+        .delete {
+            width: 50%;
+            display: inline-block;
         }
     }
 }
